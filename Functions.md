@@ -46,7 +46,8 @@ In this example, the function "add_multiple" takes four arguments "a", "b", "c" 
 ### Q:  What is the difference between a function and a method in Python?
 
 A function is a standalone block of code that performs a specific task, whereas a method is a function that is associated with a specific object or class. For example, the "append" method can be used to add an element to a list, whereas a function could be defined to perform the same task for any list.
-2. How do you create a function that can accept a variable number of arguments?
+
+### Q: How do you create a function that can accept a variable number of arguments?
 You can use the *args or **kwargs syntax to create a function that can accept a variable number of arguments.
 
 ```python
@@ -313,7 +314,7 @@ So here we are passing `greet` function as an argument to `execute_function` and
 ### Q:  What is the difference between a function and a method in Python?
 
 A function is a standalone block of code that performs a specific task, whereas a method is a function that is associated with a specific object or class. For example, the "append" method can be used to add an element to a list, whereas a function could be defined to perform the same task for any list.
-2. How do you use the "*args" and "**kwargs" syntax in a function?
+### Q: How do you use the "*args" and "**kwargs" syntax in a function?
 The *args syntax is used to pass a variable number of non-keyword arguments to a function. For example:
 
 ```python
