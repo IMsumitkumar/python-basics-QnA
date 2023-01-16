@@ -1,7 +1,7 @@
 
 ## Functions
 
-### What is a function in Python and how is it defined?
+### Q: What is a function in Python and how is it defined?
 
 A function in Python is a reusable block of code that performs a specific task. It is defined using the "def" keyword followed by the function name and a set of parentheses for any input parameters. For example:
 
@@ -12,7 +12,7 @@ def greet(name):
 
 In this example, the function is named "greet" and it takes a single parameter called "name".
 
-### How do you call a function in Python?
+### Q: How do you call a function in Python?
 
 A function is called by using its name followed by a set of parentheses that contain any necessary input parameters. For example:
 
@@ -22,7 +22,7 @@ greet("John")
 
 This will call the "greet" function defined earlier and pass the string "John" as the "name" parameter.
 
-###  What is the purpose of the "return" statement in a Python function?
+### Q:  What is the purpose of the "return" statement in a Python function?
 
 The "return" statement is used to indicate the end of a function and specifies the value or values that the function should output. For example:
 
@@ -33,7 +33,7 @@ def add(a, b):
 
 In this example, the "add" function takes two parameters "a" and "b" and returns the result of adding them together.
 
-###  Can you provide an example of a function that takes multiple arguments?
+### Q:  Can you provide an example of a function that takes multiple arguments?
 
 
 ```python
@@ -43,7 +43,7 @@ def add_multiple(a, b, c, d):
 
 In this example, the function "add_multiple" takes four arguments "a", "b", "c" and "d" and returns the result of adding all of them together.
 
-###  What is the difference between a function and a method in Python?
+### Q:  What is the difference between a function and a method in Python?
 
 A function is a standalone block of code that performs a specific task, whereas a method is a function that is associated with a specific object or class. For example, the "append" method can be used to add an element to a list, whereas a function could be defined to perform the same task for any list.
 2. How do you create a function that can accept a variable number of arguments?
@@ -57,7 +57,7 @@ def print_args(*args):
 
 This function named `print_args` takes a variable number of arguments and then prints each of them.
 
-###  Can you give an example of a Python function that uses a default value for one of its parameters?
+### Q:  Can you give an example of a Python function that uses a default value for one of its parameters?
 
 ```python
 def greet(name, greeting="Hello"):
@@ -66,7 +66,7 @@ def greet(name, greeting="Hello"):
 
 In this example, the function "greet" has two parameters, "name" and "greeting". The parameter "greeting" has a default value of "Hello", so if a value is not provided for it when the function is called, "Hello" will be used instead.
 
-###  How do you pass a function as an argument to another function in Python?
+### Q:  How do you pass a function as an argument to another function in Python?
 
 You can pass a function as an argument to another function by providing the function's name as the argument. For example, you can create a function execute_function that takes another function as its argument.
 
@@ -83,7 +83,7 @@ execute_function(greet)
 In this example, the function `execute
 
 
-###  How do you pass a function as an argument to another function in Python?
+### Q:  How do you pass a function as an argument to another function in Python?
 
 You can pass a function as an argument to another function by providing the function's name as the argument. For example, you can create a function execute_function that takes another function as its argument.
 
@@ -108,7 +108,7 @@ execute_function(greet)
 So here we are passing `greet` function as an argument to `execute_function` and calling it. As a result, it will print "Hello".
 
 
-###  What is a lambda function in Python and when is it useful?
+### Q:  What is a lambda function in Python and when is it useful?
 
 A lambda function is a small, anonymous function that is defined using the lambda keyword. It is useful when you need a small function to perform a specific task in a concise way, without needing to create a separate named function. For example:
 
@@ -126,7 +126,7 @@ print(result)  # Output: 5
 
 Lambda functions are also commonly used in conjunction with other functions such as `map`, `filter`, and `reduce` to perform operations on lists and other iterable objects.
 
-###  What is the difference between a regular function and a lambda function in Python?
+### Q:  What is the difference between a regular function and a lambda function in Python?
 The main difference between a regular function and a lambda function is that a regular function is defined using the def keyword, whereas a lambda function is defined using the lambda keyword.
 A regular function can have a name and can be invoked multiple times, whereas a lambda function is an anonymous function and can only be invoked once.
 Regular functions can contain complex logic and multiple statements, whereas lambda functions are limited to a single expression.
@@ -146,7 +146,7 @@ add = lambda x, y: x + y
 Both the function will give the same output, but the way of defining and calling is different.
 
 
-###  What is a recursive function and when is it useful?
+### Q:  What is a recursive function and when is it useful?
 
 A recursive function is a function that calls itself in order to solve a problem. It is useful when the problem can be broken down into smaller sub-problems that are identical to the original problem.
 For example, consider the problem of calculating the factorial of a given number. The factorial of a number n is the product of all the numbers from 1 to n. This can be represented as n!. We can calculate it using the recursive function in the following way:
@@ -163,7 +163,7 @@ In this example, the `factorial` function takes one argument `n`, and it checks 
 Recursive functions are also useful when working with tree data structures or performing a depth-first search on a graph.
 
 
-###  How do you create a function that can return multiple values?
+### Q:  How do you create a function that can return multiple values?
 
 In Python, a function can return multiple values by returning a tuple or a list of values. For example,
 
@@ -190,7 +190,7 @@ In this example, the function `multiple_values` is returning 3 values, and we ar
 Alternatively, you can also use the `return` statement multiple times within a function to return different values at different times, but it's not a good practice.
 
 
-###  What is a closure in Python and when is it useful?
+### Q:  What is a closure in Python and when is it useful?
 
 A closure in Python is a function object that remembers values in the enclosing scope even if they are not present in memory. It is useful when you want to create a function that "remembers" the state of the variables in the scope where it was defined, even after the scope is no longer in memory.
 For example,
@@ -209,7 +209,7 @@ In this example, `outer_function` takes one argument `x` and returns the inner_f
 Closures are often used in conjunction with decorators, which are a way to modify the behavior of a function without modifying its code.
 
 
-###  How do you use the "global" keyword within a function?
+### Q:  How do you use the "global" keyword within a function?
 
 The global keyword is used to indicate that a variable is a global variable, rather than a local variable. This is useful when you want to modify the value of a global variable inside a function.
 For example:
@@ -227,7 +227,7 @@ print(change_x()) # Output: 6
 
 Here, `x` is a global variable and we're trying to modify it's value inside the function `change_x`. Without using `global` keyword, python will treat it as a local variable and creates a new variable with the same name.
 
-###  What is the purpose of the "nonlocal" keyword in Python?
+### Q:  What is the purpose of the "nonlocal" keyword in Python?
 
 The nonlocal keyword is used to indicate that a variable is a non-local variable, rather than a local variable or a global variable. This is useful when you have a nested function and you want to modify a variable that is defined in an enclosing scope but not in the global scope.
 For example:
@@ -246,7 +246,7 @@ print(outer_function()) # Output: 6
 
 Here, `x` is a non-local variable, defined in the enclosing scope of inner function and we're trying to modify it's value inside the inner function. Without using `nonlocal` keyword, python will treat it as a local variable and creates a new variable with the same name.
 
-###  Can you give an example of how you would use a decorator to modify a 
+### Q:  Can you give an example of how you would use a decorator to modify a 
 function?
 A decorator is a function that takes another function as its argument and modifies its behavior.
 For example,
@@ -269,7 +269,7 @@ print(greet()) # Output: HELLO
 In this example, we have defined a decorator function `uppercase` that takes another function `fn` as an argument and returns a new function `wrapper`. The `wrapper` function executes the original function `fn` and modifies its output by converting it to uppercase.
 We are using the `@uppercase` decorator syntax to apply the `uppercase` decorator on the `greet` function, and when we call the `greet` function it returns the output in uppercase.
 
-###  How do you create a function that can be used as a generator?
+### Q:  How do you create a function that can be used as a generator?
 
 A generator is a special type of function that can be used to generate a sequence of values over time. It is defined using the yield keyword instead of return.
 For example,
@@ -286,7 +286,7 @@ for i in my_generator(5):
 In this example, the `my_generator` function takes one argument `n` and uses the `yield` keyword to generate a sequence of numbers from 0 to `n-1` one at a time. When the function is called, it returns a generator object
 
 
-###  How do you pass a function as an argument to another function in Python?
+### Q:  How do you pass a function as an argument to another function in Python?
 
 You can pass a function as an argument to another function by providing the function's name as the argument. For example, you can create a function execute_function that takes another function as its argument.
 
@@ -310,7 +310,7 @@ execute_function(greet)
 
 So here we are passing `greet` function as an argument to `execute_function` and calling it. As a result, it will print "Hello".
 
-###  What is the difference between a function and a method in Python?
+### Q:  What is the difference between a function and a method in Python?
 
 A function is a standalone block of code that performs a specific task, whereas a method is a function that is associated with a specific object or class. For example, the "append" method can be used to add an element to a list, whereas a function could be defined to perform the same task for any list.
 2. How do you use the "*args" and "**kwargs" syntax in a function?
@@ -335,7 +335,7 @@ This function named `print_kwargs` takes a variable number of keyword arguments 
 You can also use both `*args` and `**kwargs` in a single function to accept a variable number of
 
 
-###  How do you use the "*args" and "**kwargs" syntax in a function?
+### Q:  How do you use the "*args" and "**kwargs" syntax in a function?
 
 The *args syntax is used to pass a variable number of non-keyword arguments to a function. For example:
 
@@ -358,7 +358,7 @@ This function named `print_kwargs` takes a variable number of keyword arguments 
 You can also use both `*args` and `**kwargs` in a single function to accept a variable number of arguments and keyword arguments.
 
 
-###  What is the use of the "yield" keyword in a function?
+### Q:  What is the use of the "yield" keyword in a function?
 
 The yield keyword is used in a function to create a generator. A generator is a special type of function that can be used to generate a sequence of values over time. It is defined using the yield keyword instead of return.
 For example,
@@ -375,7 +375,7 @@ for i in my_generator(5):
 In this example, the `my_generator` function takes one argument `n` and uses the `yield` keyword to generate a sequence of numbers from 0 to `n-1` one at a time. When the function is called, it returns a generator object. With each call to the generator's `__next__()` method, the function resumes execution from where it left off and the next value is returned. This allows the generator to generate a large sequence of values without consuming a lot of memory.
 
 
-###  How do you handle exceptions in a function?
+### Q:  How do you handle exceptions in a function?
 
 To handle exceptions in a function, you can use a try-except block. The try block contains the code that may raise an exception, and the except block contains the code that will be executed if an exception is raised.
 For example,
@@ -394,7 +394,7 @@ def divide(a, b):
 In this example, the `divide` function takes two arguments `a` and `b`, and it performs division of `a` by `b`. If the division results in a ZeroDivisionError, the code in the `except` block will be executed which prints the message and returns None. If the division is successful, the code in the `else` block is executed and the result is returned.
 It's also possible to catch multiple exceptions and handle them differently using multiple except blocks, or use the catch-all exception `Exception` to catch all types of exceptions.
 
-###  How do you use the "assert" statement in a function?
+### Q:  How do you use the "assert" statement in a function?
 
 The assert statement is used to check if a given condition is true, and if it is not true, it raises an AssertionError exception. It is typically used for debugging and to ensure that the function is being called with the correct arguments.
 For example,
@@ -409,7 +409,7 @@ In this example, the `square` function takes one argument `x`, and it uses the `
 It's good practice to use assertions to check for valid input, but not for checking for error conditions that might occur during the execution of the function. For example, it would not be appropriate to use an assertion to check that a file has been successfully opened, because this can fail for many reasons other than a programming error.
 
 
-###  How do you use the "return" statement in a function?
+### Q:  How do you use the "return" statement in a function?
 
 The return statement is used to exit a function and return a value to the caller. When a function reaches a return statement, it immediately stops executing and the value of the expression following the return keyword is returned to the caller. If there is no expression following the return keyword, the function returns None.
 For example,
@@ -427,7 +427,7 @@ You can use multiple `return` statements in a function to return different value
 It's also important to note that, when a function reaches a return statement, it immediately stops executing, so any code after the return statement will not be executed.
 
 
-###  How do you use the "lambda" function in Python?
+### Q:  How do you use the "lambda" function in Python?
 
 A lambda function is a small, anonymous function that can take any number of arguments but can only have one expression. It is defined using the lambda keyword, followed by the arguments and a colon, and the expression.
 For example,
@@ -454,7 +454,7 @@ squared_list = list(map(lambda x: x ** 2, my_list))
 In this example, we are using a lambda function inside the `map` function to square every element of the `my_list` and storing the result in a new list `squared_list`.
 
 
-###  How do you use the "recursion" in a function?
+### Q:  How do you use the "recursion" in a function?
 
 Recursion is a technique in which a function calls itself. The function must have a stopping condition, also known as the base case, to prevent the function from calling itself indefinitely.
 For example,
@@ -473,7 +473,7 @@ The function will keep on calling itself until it reaches the base case, after t
 It's important to be careful when using recursion, as it can lead to stack overflow if the function calls itself too many times without reaching the base case.
 
 
-### How do you use the "closures" in a function?
+### Q: How do you use the "closures" in a function?
 
 A closure is a function object that remembers values in the enclosing scope even if they are not present in memory. It is created when a nested function references a value from its containing function. The nested function can continue to access the variables from the containing function even after the containing function has finished execution.
 For example,
@@ -494,7 +494,7 @@ Closures can be used to implement decorators, and to manage state in functional 
 It's important to note that, closures do not create a copy of the variables from the enclosing scope, they create references to them, which means that if the variables are mutable and modified inside the closure, the changes will be reflected outside of it as well.
 
 
-###  How do you use the "decorators" in a function?
+### Q:  How do you use the "decorators" in a function?
 
 A decorator is a function that modifies the behavior of another function. It is defined using the @ symbol, followed by the decorator function name.
 For example,
@@ -523,7 +523,7 @@ When we call `my_function`, it will execute the code inside the `wrapper` functi
 Decorators can be used to add functionality to existing functions, such as logging, timing, or validation, without modifying the original code.
 
 
-###  How do you use the "partial functions" in Python?
+### Q:  How do you use the "partial functions" in Python?
 
 A partial function is a function that is created by partially applying arguments to a function. It is created using the functools.partial function from the functools module.
 For example,
@@ -545,7 +545,7 @@ Partial functions are useful when you need to frequently call a function with th
 It also allows for creating simpler interfaces for functions with many optional arguments by fixing some of the arguments and leaving others to be passed at the call site.
 
 
-###  How do you use the "first-class functions" in Python?
+### Q:  How do you use the "first-class functions" in Python?
 
 In Python, a function is a first-class citizen, which means that it can be treated like any other data type, such as an int or a string. This means that a function can be:
 
@@ -593,7 +593,7 @@ First-class functions allow you to use functions as building blocks to create mo
 
 
 
-### How do you create a function that can be used as a property?
+### Q: How do you create a function that can be used as a property?
 
 In Python, you can create a function that can be used as a property by using the built-in `property()` function. The `property()` function takes in getter, setter and deleter functions as arguments and returns a property object.
 
@@ -633,7 +633,7 @@ In this example, the `name` property uses the `@property` decorator to define th
 By using the property decorators, you can make a function that can be used as a property, and make it more readable and maintainable.
 
 
-### How do you use the "@property" decorator to create a property?
+### Q: How do you use the "@property" decorator to create a property?
 
 In Python, the `@property` decorator can be used to create a property, which allows you to define getter and setter methods for a class attribute in a more concise and readable way.
 Here's an example of a class `Person` with a property `name`:
@@ -667,7 +667,7 @@ It's a good practice to use a single leading underscore `_` to indicate that the
 This way you can encapsulate the internal representation of
 
 
-### why do we use property decorator?
+### Q: why do we use property decorator?
 
 The `@property` decorator is used to create a property in Python. It allows you to define getter and setter methods for a class attribute in a more concise and readable way.
 
@@ -681,7 +681,7 @@ The property decorator also allows to hide the internal representation of the at
 
 In summary, the property decorator allows you to create a property that is more readable, maintainable and more robust, by adding additional functionality to your class attributes, and by allowing to hide the internal representation of the attribute.
 
-### How do you create a function that can be used as a class property?
+### Q: How do you create a function that can be used as a class property?
 
 In Python, you can create a function that can be used as a class property by using the built-in `property()` function and decorating it with the `@classmethod` decorator.
 
@@ -743,7 +743,7 @@ In this example, `species_property` uses `@classproperty` decorator to define th
 This way, you can create a function that can be used as a class property.
 It allows you to encapsulate the internal representation of the class attribute and also you can add validation checks, or perform additional operations when the attribute is accessed, set or deleted.
 
-###  How do you create a function that can be used as a abstract method ?
+### Q:  How do you create a function that can be used as a abstract method ?
 
 In Python, you can create a function that can be used as an abstract method by using the `abc.abstractmethod` decorator from the `abc` module and by defining the class as an abstract class using the `ABC` class from `abc` module.
 
@@ -787,7 +787,7 @@ It's not possible to create an instance of an abstract class, and if you try to 
 The `abc` module allows you to define abstract classes and abstract methods, which means that you can define a set of methods and properties that must be implemented by subclasses. It also allows to define abstract properties by using `abstractproperty` decorator.
 This is useful when you want to define a common interface for a set of related classes, without having to provide an implementation for every method in the base class.
 
-###  why do we use abstract method?
+### Q:  why do we use abstract method?
 
 We use abstract methods to define a common interface for a set of related classes. It's a way of specifying the methods that a class should have, without providing an implementation for every method in the base class.
 
@@ -801,7 +801,7 @@ Additionally, by defining an abstract class, you can create an instance of the c
 
 In summary, we use abstract methods to define a common interface for a set of related classes, to ensure that the subclasses implement certain methods and properties, to change the implementation of the base class without affecting the subclasses, and to prevent instantiation of the abstract class.
 
-### How do you use the "super()" function within a function?
+### Q: How do you use the "super()" function within a function?
 
 
 The `super()` function is used to call a method from the parent class in a subclass. It is often used within a function, such as the `__init__` method, to call the corresponding method in the parent class.
@@ -845,7 +845,7 @@ It's also worth noting that the `super()` function can take two arguments: the f
 
 In summary, the `super()` function is used to call a method from a parent class within a subclass. It allows you to avoid code duplication and to make your code more maintainable. It can be used in any method of the subclass and it can be used to call methods from a specific parent class when using multiple inheritance.
 
-### what is the meaning of __name__ == '__main__'?
+### Q: what is the meaning of __name__ == '__main__'?
 
 `__name__` is a built-in variable in Python that holds the name of the current module.
 
@@ -879,7 +879,7 @@ This way, when you run the script directly, the output will be "I am being run d
 In summary, `__name__ == '__main__'` is a way to check whether the current script is being run directly or imported as a module. It's commonly used to determine whether certain code should be executed or not depending on how the script is being used.
 
 
-### What is the purpose of the "name" variable in a function?
+### Q: What is the purpose of the "name" variable in a function?
 
 In Python, the `name` variable is a built-in attribute of a function that holds the name of the function.
 
@@ -921,7 +921,7 @@ print("This function is called " + function_name)
 In summary, the `name` attribute of a function holds the name of the function and it's useful for debugging, understanding the code organization, programmatically check the name of the function, create a more dynamic and flexible code.
 
 
-###  How do you use the "doc" variable to add documentation to a function?
+### Q:  How do you use the "doc" variable to add documentation to a function?
 
 In Python, the `__doc__` attribute is used to add documentation to a function. It is a special attribute that holds the documentation string of a function, also known as the docstring.
 
@@ -960,7 +960,7 @@ help(my_function)
 In summary, the `__doc__` attribute is used to add documentation to a function in Python. It is a special attribute that holds the documentation string of a function and it's represented as a string. You can use triple quotes or single quotes to add the documentation and you can also use `help()` function to get the documentation of a function.
 
 
-### How do you use the "annotations" variable to add type hints to a function?
+### Q: How do you use the "annotations" variable to add type hints to a function?
 
 In Python, the `__annotations__` attribute is used to add type hints to a function. It is a special attribute that holds the type hints of a function's parameters and return value.
 
@@ -995,7 +995,7 @@ It's worth noting that type hints are not enforced at runtime, they are mainly u
 In summary, the `__annotations__` attribute is used to add type hints to a function in Python, it's a special attribute that holds the type hints of a function's parameters and return value. You can add type hints directly after the function parameter, separated by a colon `:` or use a third-party library such as `typing` to add type hints. Type hints are not enforced at runtime, they are mainly used for readability, better understanding of the code and for the tools like IDEs to provide better autocompletion and type checking suggestions.
 
 
-### How do you use the "call" method to make a class callable?
+### Q: How do you use the "call" method to make a class callable?
 
 In Python, a class can be made callable by defining a special method named `__call__`. This method is invoked when the class is called like a function.
 
@@ -1035,7 +1035,7 @@ In this example, the class `MyCallable` is defined with an `__init__` method tha
 In summary, a class can be made callable by defining a special method named `__call__`. This method is invoked when the class is called like a function. The `__call__` method should take at least one argument, which is the instance of the class, and it can also take other arguments based on the requirement. This method can be used to define the behavior of the class when it's called like a function.
 
 
-### why do we need init and How do you use the "init" method to initialize a class?
+### Q: why do we need init and How do you use the "init" method to initialize a class?
 
 The `__init__` method, also known as the constructor method, is a special method in Python classes that is automatically called when an instance of the class is created. It is used to initialize the attributes of the class and set them to their default values.
 
@@ -1060,7 +1060,7 @@ The `__init__` method is used to set the initial state of an object when it's cr
 
 In summary, the `__init__` method, also known as the constructor method, is a special method in Python classes that is automatically called when an instance of the class is created. It is used to initialize the attributes of the class and set them to their default values. It's not mandatory to define an `__init__` method for a class, but it's a common practice to do so, especially when the class has attributes that need to be initialized.
 
-### what is constructor  method in python?
+### Q: what is constructor  method in python?
 
 In Python, a constructor method is a special method that is automatically called when an instance of a class is created. The constructor method is used to initialize the attributes of the class and set them to their default values. The special method name for the constructor method in Python is `__init__`.
 
@@ -1085,7 +1085,7 @@ It's worth noting that, it's not mandatory to define an `__init__` method for a 
 
 In summary, a constructor method in Python is a special method that is automatically called when an instance of a class is created. The constructor method is used to initialize the attributes of the class and set them to their default values. The special method name for the constructor method in Python is `__init__`. It's not mandatory to define an `__init__` method for a class, but it's a common practice to do so, especially when the class has attributes that need to be initialized.
 
-###  How do you use the "str" method to define a string representation of a class?
+### Q:  How do you use the "str" method to define a string representation of a class?
 
 In Python, the `__str__` method is used to define a human-readable string representation of an instance of a class. This method is called when the built-in `str()` function or the `print()` function is used on an instance of the class.
 
@@ -1114,7 +1114,7 @@ It's worth noting that, If the `__str__` method is not defined for a class, Pyth
 
 In summary, the `__str__` method is used to define a human-readable string representation of an instance of a class. This method is called when the built-in `str()` function or the `print()` function is used on an instance of the class. It's defined within the class and it returns a string representation of the instance of the class. If the `__str__` method is not defined for a class, Python will call the `__repr__` method instead, which should return a string representation of the class that can be used to recreate the object if possible.
 
-###  How do you use the "repr" method to define a string representation of a class for debugging?
+### Q:  How do you use the "repr" method to define a string representation of a class for debugging?
 
 In Python, the `__repr__` method is used to define a string representation of an instance of a class that is used for debugging. This method is called when the built-in `repr()` function is used on an instance of the class, or when the instance is displayed in the interactive interpreter.
 
@@ -1145,7 +1145,7 @@ It's worth noting that, If the `__repr__` method is not defined for a class, Pyt
 
 In summary, the `__repr__` method is used to define a string representation of an instance of a class that is used for debugging. This method is called when the built-in `repr()` function is used on an instance of the class or when the instance is displayed in the interactive interpreter. It should return a string that, when passed to the built-in `eval()` function, would recreate the instance as closely as possible. If the `__repr__` method is not defined for a class, Python will call the `__str__` method instead, if it's defined, otherwise, it will use the default representation of the class, which is the class name and the memory address of the instance.
 
-### How do you use the "del" method to define cleanup code for a class?
+### Q: How do you use the "del" method to define cleanup code for a class?
 
 In Python, the `__del__` method is a special method that is called when an instance of a class is about to be deleted. This method can be used to define cleanup code for a class, such as releasing resources or closing connections.
 
@@ -1172,7 +1172,7 @@ It's worth noting that, The `__del__` method is called when the garbage collecto
 
 In summary, the `__del__` method is a special method that is called when an instance of a class is about to be deleted. This method can be used to define cleanup code for a class, such as releasing resources or closing connections. The `__del__` method is called when the garbage collector is about to delete an object, it's not guaranteed that the `__del__` method will be called at all. If you want to ensure that an object's resources are released, it's better to use a context manager, for example using the `with` statement.
 
-### How do you use the "new" method to customize the creation of a class object?
+### Q: How do you use the "new" method to customize the creation of a class object?
 In Python, the `__new__` method is a special method that is called when a new instance of a class is created. This method can be used to customize the creation of a class object, such as allocating memory for the object, initializing the object's attributes, or returning a different object altogether.
 
 Here is an example of how to use the `__new__` method to customize the creation of a class object:
@@ -1195,7 +1195,7 @@ It's worth noting that, The `__new__` method is a class method and it should alw
 
 In summary, the `__new__` method is a special method that is called when a new instance of a class is created. This method can be used to customize the creation of a class object, such as allocating memory for the object, initializing the object's attributes, or returning a different object altogether. It's a class method and it should always return a new instance of the class. If the method returns an instance of a different class, or an existing instance of the class, it will be used as the new object.
 
-### How do you use the "getattr" method to define default behavior for attribute access?
+### Q: How do you use the "getattr" method to define default behavior for attribute access?
 
 In Python, the `__getattr__` method is a special method that is called when an attribute is accessed on an object, and the attribute is not found in the object's dictionary. This method can be used to define default behavior for attribute access, such as returning a default value, or raising an exception.
 
@@ -1228,7 +1228,7 @@ It's worth noting that the `__getattr__` method is only called when the attribut
 
 In summary, the `__getattr__` method is a special method that is called when an attribute is accessed on an object, and the attribute is not found in the object's dictionary. This method can be used to define default behavior for attribute access, such as returning a default value, or raising an exception. The `__getattr__` method is only called when the attribute is not found in the object's dictionary, not when the attribute is found but its value is `None`.
 
-###  How do you use the "setattr" method to define custom behavior for attribute assignment?
+### Q:  How do you use the "setattr" method to define custom behavior for attribute assignment?
 
 In Python, the `__setattr__` method is a special method that is called when an attribute is assigned to an object. This method can be used to define custom behavior for attribute assignment, such as validating the value, or performing additional actions when an attribute is set.
 
@@ -1261,7 +1261,7 @@ It's worth noting that, the `__setattr__` method is called for all attribute ass
 
 In summary, the `__setattr__` method is a special method that is called when an attribute is assigned to an object. This method can be used to define custom behavior for attribute assignment, such as validating the value, or performing additional actions when an attribute is set. The `__setattr__` method is called for all attribute assignments on the object, including assignments to the attributes created in `__init__` method or any other method. To avoid an infinite loop, you should use the `super().__setattr__(name, value)` to set the value of the attribute instead of self.x = y.
 
-### How do you use the "getattribute" method to define custom behavior for attribute access?
+### Q: How do you use the "getattribute" method to define custom behavior for attribute access?
 
 In Python, the `__getattribute__` method is a special method that is called when an attribute is accessed on an object. This method can be used to define custom behavior for attribute access, such as logging access to an attribute, or performing additional calculations when an attribute is accessed.
 
@@ -1291,7 +1291,7 @@ It's worth noting that, The `__getattribute__` method is called for all attribut
 
 In summary, the `__getattribute__` method is a special method that is called when an attribute is accessed on an object. This method can be used to define custom behavior for attribute access, such as logging access to an attribute, or performing additional calculations when an attribute is accessed. The `__getattribute__` method is called for all attribute access on the object, including access to the attributes created in `__init__` method or any other method, and also for all the attribute access, including access to the attributes that are defined in the class or its superclasses.
 
-###  How do you use the "setattribute" method to define custom behavior for attribute assignment?
+### Q:  How do you use the "setattribute" method to define custom behavior for attribute assignment?
 
 In Python, the `__setattr__` method is a special method that is called when an attribute is assigned to an object. This method can be used to define custom behavior for attribute assignment, such as validating the value, or performing additional actions when an attribute is set.
 
