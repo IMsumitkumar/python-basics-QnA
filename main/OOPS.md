@@ -1027,3 +1027,27 @@ This is the same as calling the method area().
 print(r.area())  # Output: 15
 ```
 The @property decorator is useful when you want to expose a property of an object in a way that looks like an attribute, but you want to perform some additional logic before returning the value.
+
+
+
+
+### 51. What is the purpose of the __name__ variable in Python?
+The `__name__` variable in Python is a special built-in variable that is used to determine the name of the current module. It is mainly used for debugging and also to control the execution of code based on how the script is being run.
+### 52. How is the value of __name__ determined in a Python script?
+The value of the __name__ variable in a Python script is determined by the interpreter depending on how the script is being executed. If the script is being executed directly as the main program, then __name__ is set to '__main__'. If the script is being imported as a module into another program, then __name__ is set to the name of the module.
+### 53. What is the value of __name__ when a module is imported?
+When a module is imported, the value of the __name__ variable is set to the name of the module.
+### 54. What is the value of __name__ when a Python script is executed directly?
+When a Python script is executed directly as the main program, the value of the __name__ variable is set to '__main__'.
+### 55. What is the purpose of the if __name__ == '__main__': statement in Python?
+The if __name__ == '__main__': statement in Python is used to check if the script is being run as the main program or if it is being imported as a module. It allows us to write code that can be used as a standalone program or as a module to be imported into another program.
+### 56. How does the if __name__ == '__main__': statement work?
+The if  `__name__ == '__main__':` statement works by checking the value of the __name__ variable. If the value of `__name__` is equal to `'__main__'`, then the code inside the if statement is executed. If the value of __name__ is not equal to `'__main__'`, then the code inside the if statement is not executed.
+### 57. What is the benefit of using the if __name__ == '__main__': statement in a Python script?
+The benefit of using the if `__name__ == '__main__':` statement in a Python script is that it allows us to write code that can be used as a standalone program or as a module to be imported into another program. It helps in separating the code that is meant to be used as a module from the code that is meant to be used as a standalone program.
+### 58. Can you have multiple if __name__ == '__main__': statements in a Python script?
+Yes, you can have multiple if `__name__ == '__main__':` statements in a Python script. However, only the code inside the first if statement will be executed when the script is run as a standalone program.
+### 59. What happens if you remove the if __name__ == '__main__': statement from a Python script?
+If you remove the if __name__ == '__main__': statement from a Python script, then all the code in the script will be executed every time the module is imported into another program. This can lead to unexpected behavior, especially if the code contains statements that modify the state of the program.
+### 60. How do you run a Python script that contains an if __name__ == '__main__': statement?
+To run a Python script that contains an if __name__ == '__main__': statement, you can simply execute the script using the
