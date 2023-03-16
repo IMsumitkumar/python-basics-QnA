@@ -887,11 +887,143 @@ In this example, we defined a custom class MyList that has an attribute items wh
 
 So, when we create an instance of MyList and use the indexing operator with an index of 2, the __getitem__() method is called and returns the value 3, which is then printed to the console.
 ### 41.What is the setitem() method in Python?
+The __setitem__() method is used to set the value of an item at a specific index in a container object, such as a list or dictionary. It is called when using square brackets to assign a value to an element at a particular index.
+
+Here is an example:
+```python
+class MyList:
+    def __init__(self, *args):
+        self.elements = list(args)
+        
+    def __setitem__(self, index, value):
+        self.elements[index] = value
+
+my_list = MyList(1, 2, 3)
+print(my_list.elements) # Output: [1, 2, 3]
+
+my_list[1] = 4
+print(my_list.elements) # Output: [1, 4, 3]
+
+```
+In the example above, we define a class MyList that stores a list of elements. We define the __setitem__() method to set the value of an element at a specific index in the list. We then create an instance of MyList and modify an element at index 1 by using square brackets and assigning a new value. The __setitem__() method is called and updates the element in the list. Finally, we print the updated list to verify that the change was made.
 ### 42.What is the delitem() method in Python?
+In Python, the __delitem__() method is used to delete an element from a sequence object such as a list, tuple or string by its index. It is called when an element is deleted from the sequence using the del statement.
+
+Here is an example:
+```python
+# Define a list
+my_list = [1, 2, 3, 4, 5]
+
+# Delete an element from the list using the del statement
+del my_list[2]
+
+# Print the list to confirm that the element has been deleted
+print(my_list)
+
+
+-> [1, 2, 4, 5]
+
+```
+In this example, we first define a list called my_list with five elements. We then delete the element with index 2 (which is the third element) using the del statement. Finally, we print the list to confirm that the element has been deleted.
+
+The __delitem__() method can be useful when working with custom sequence objects or when we want to define our own behavior for deleting elements from a sequence.
 ### 43.What is the call() method in Python?
+The __call__ method is a special method in Python that allows an object to be called like a function. When an object is called, Python checks if it has a __call__ method, and if it does, Python calls this method with the arguments passed to the object.
+
+Here is an example that shows how to use the __call__ method:
+```python
+class Adder:
+    def __init__(self, x):
+        self.x = x
+
+    def __call__(self, y):
+        return self.x + y
+
+add5 = Adder(5)
+result = add5(3) # Call the object like a function
+print(result)    # Output: 8
+
+```
+In this example, we define a class Adder that has an __init__ method to initialize the object with a value x, and a __call__ method that takes an argument y and returns the sum of x and y. We create an object add5 of class Adder with x set to 5, and then call the object with an argument of 3. The output is 8, which is the sum of 5 and 3.
 ### 44.What is the isinstance() function in Python?
+The isinstance() function in Python is used to determine whether an object belongs to a specific class or its subclass. It returns True if the object is an instance of the specified class or its subclass, and False otherwise.
+
+For example, let's say we have a class called Person:
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+We can create an object of this class:
+
+```python
+p = Person("John", 30)
+```
+Now, we can use the isinstance() function to check if p is an instance of the Person class:
+
+```python
+print(isinstance(p, Person)) # Output: True
+```
+We can also use isinstance() to check if p is an instance of a superclass of Person, for example, object:
+
+```python
+print(isinstance(p, object)) # Output: True
+
+```
+`isinstance()` is commonly used in conditional statements to check the type of an object before performing certain actions on it.
+
 ### 45.What is the issubclass() function in Python?
-### 46.What is the type() function in Python?
-### 47.What is the id() function in Python?
-### 48.What is the dir() function in Python?
+The `issubclass()` function in Python is used to check if a class is a subclass of another class. It takes two arguments, the first being the class that you want to check and the second is the potential superclass that you want to check against.
+
+Here is an example:
+
+```python
+class Animal:
+    pass
+
+class Dog(Animal):
+    pass
+
+class GoldenRetriever(Dog):
+    pass
+
+print(issubclass(GoldenRetriever, Animal))   # True
+print(issubclass(Dog, Animal))   # True
+print(issubclass(Animal, Dog))   # False
+```
+In this example, we have three classes Animal, Dog, and GoldenRetriever. GoldenRetriever is a subclass of Dog, which is a subclass of Animal. We use the `issubclass()` function to check if GoldenRetriever is a subclass of Animal, which is true. We also check if Dog is a subclass of Animal, which is also true. Finally, we check if Animal is a subclass of Dog, which is false.
+
 ### 50.What is the @property decorator in Python?
+
+The @property decorator in Python is used to define methods that are accessed like attributes but perform some additional logic before returning the attribute value. The @property decorator allows you to access an object's attributes in a way that looks like you are accessing a regular instance variable, but in reality, you are executing a method that returns the attribute value.
+
+Here is an example to illustrate the concept:
+
+```python
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    @property
+    def area(self):
+        return self.length * self.width
+
+r = Rectangle(5, 3)
+print(r.area)   # Output: 15
+```
+In the above example, we have defined a Rectangle class with two instance variables, length and width. We have also defined a method called area that returns the product of length and width.
+
+We have used the @property decorator to define area as a read-only attribute. Now, we can access area like an instance variable without invoking it as a method.
+
+```python
+print(r.area)  # Output: 15
+```
+This is the same as calling the method area().
+
+```python
+print(r.area())  # Output: 15
+```
+The @property decorator is useful when you want to expose a property of an object in a way that looks like an attribute, but you want to perform some additional logic before returning the value.
